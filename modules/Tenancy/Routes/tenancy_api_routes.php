@@ -1,6 +1,7 @@
 <?php
 use Modules\Tenancy\Http\Controllers\Api\TenancyApiController;
-use Route;
+use Illuminate\Support\Facades\Route;
+
 Route::controller(TenancyApiController::class)->group(function(){
     Route::get('/index','index');
     Route::get('/show','show');

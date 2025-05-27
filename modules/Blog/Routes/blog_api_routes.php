@@ -1,7 +1,8 @@
 <?php
 use App\Http\Controllers\Controller;
 use Modules\Blog\Http\Controllers\Api\BlogApiController;
-use Route;
+use Illuminate\Support\Facades\Route;
+
 Route::controller(BlogApiController::class)->group(function(){
     Route::get('/index','index');
     Route::get('/show','show');
